@@ -1,0 +1,14 @@
+{
+  "name": "burakconstructureproject",
+  "version": "1.0.0",
+  "description": "Webpage of Constructure company",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Orhan Ozkercin, Mustafa Batuhan Bayoglu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
