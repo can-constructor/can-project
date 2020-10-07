@@ -1,0 +1,44 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 700;
+  &--primary {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+  &--secondary {
+    color: $color-dark;
+    background-color: transparent;
+    border: 2px solid $color-dark;
+    &:hover {
+    color: $color-white;
+    background-color: $color-dark;
+    }
+  }
+  &--tertiary {
+    color: $color-primary;
+    background-color: transparent;
+    border: 2px solid $color-primary;
+    &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+    }
+  }
+  &--test {
+    color: $color-white;
+    background-color: transparent;
+    border: 2px solid $color-white;
+    &:hover {
+    color: $color-dark;
+    background-color: $color-white;
+    } 
+  }
+  &--animated{
+    animation: moveInBottom 1s ease-out; 
+  }
+}
+ .btn:hover {
+   opacity: 0.9;
+ }

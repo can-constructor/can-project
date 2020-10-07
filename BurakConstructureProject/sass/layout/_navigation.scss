@@ -1,0 +1,32 @@
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
+  padding: 2rem;
+  &__logo{
+    margin-left: 2rem;
+    width: 180px;
+  }
+ 
+  &__item {
+   display: inline-block;
+   padding: 0.75rem;
+   font-weight: 500;
+   &:not(:last-child){
+     margin-right: 2rem;
+   }
+  }
+  &__link {
+    color: $color-white;
+    padding-bottom: .7rem;
+    &:hover{
+      background-color: transparent;
+      border-bottom: 2px solid $color-white;  
+    }
+    &--current{
+      background-color: transparent;
+      border-bottom: 2px solid $color-primary;    
+    }
+  }
+}

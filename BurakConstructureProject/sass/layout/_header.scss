@@ -1,0 +1,21 @@
+
+.header {
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom,rgba($color-secondary-dark,.9),rgba($color-secondary-light, 0.1)),
+  url('../img/hero5.jpg') no-repeat  center center/cover;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 95vh;
+  }
+  &__content {
+   width: 50%;//responsive için width: 100%
+   text-align: center;
+   padding: 2rem 4rem;
+  }
+}

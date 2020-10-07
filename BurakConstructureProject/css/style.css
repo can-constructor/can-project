@@ -1,0 +1,210 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2500px); }
+  70% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); }
+  70% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(250px); }
+  80% {
+    transform: translateY(-10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-250px); }
+  80% {
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Lato" ,sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+li {
+  list-style: none; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  font-size: 35px;
+  font-weight: 900;
+  animation: moveInTop 1s ease-out; }
+
+.paragraph {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.7;
+  width: 100%; }
+  .paragraph--animated {
+    font-weight: 700;
+    font-size: 2rem;
+    animation: moveInLeft 1s ease-out; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-margin-bottom-huge {
+  margin-bottom: 15rem; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-4 {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-2 {
+  margin-bottom: 2rem; }
+
+.u-margin-top-2 {
+  margin-top: 2rem; }
+
+.u-margin-top-4 {
+  margin-top: 4rem; }
+
+.u-margin-top-8 {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 15rem; }
+
+.u-margin-left-2 {
+  margin-left: 2rem; }
+
+.u-margin-left-4 {
+  margin-left: 4rem; }
+
+.u-margin-left-8 {
+  margin-left: 8rem; }
+
+.u-margin-left-huge {
+  margin-left: 15rem; }
+
+.u-margin-right-2 {
+  margin-right: 2rem; }
+
+.u-margin-right-4 {
+  margin-right: 4rem; }
+
+.u-margin-right-8 {
+  margin-right: 8rem; }
+
+.u-margin-right-huge {
+  margin-right: 15rem; }
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 700; }
+  .btn--primary {
+    color: #fff;
+    background-color: #FFB400; }
+  .btn--secondary {
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000; }
+    .btn--secondary:hover {
+      color: #fff;
+      background-color: #000; }
+  .btn--tertiary {
+    color: #FFB400;
+    background-color: transparent;
+    border: 2px solid #FFB400; }
+    .btn--tertiary:hover {
+      color: #fff;
+      background-color: #FFB400; }
+  .btn--test {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff; }
+    .btn--test:hover {
+      color: #000;
+      background-color: #fff; }
+  .btn--animated {
+    animation: moveInBottom 1s ease-out; }
+
+.btn:hover {
+  opacity: 0.9; }
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 2rem; }
+  .navigation__logo {
+    margin-left: 2rem;
+    width: 180px; }
+  .navigation__item {
+    display: inline-block;
+    padding: 0.75rem;
+    font-weight: 500; }
+    .navigation__item:not(:last-child) {
+      margin-right: 2rem; }
+  .navigation__link {
+    color: #fff;
+    padding-bottom: .7rem; }
+    .navigation__link:hover {
+      background-color: transparent;
+      border-bottom: 2px solid #fff; }
+    .navigation__link--current {
+      background-color: transparent;
+      border-bottom: 2px solid #FFB400; }
+
+.header {
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(29, 29, 29, 0.9), rgba(55, 55, 55, 0.1)), url("../img/hero5.jpg") no-repeat center center/cover; }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    height: 95vh; }
+  .header__content {
+    width: 50%;
+    text-align: center;
+    padding: 2rem 4rem; }
