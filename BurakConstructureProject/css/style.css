@@ -184,10 +184,11 @@ li {
       margin-right: 2rem; }
   .navigation__link {
     color: #fff;
-    padding-bottom: .7rem; }
+    padding-bottom: .7rem;
+    transition: all .2s ease-out; }
     .navigation__link:hover {
       background-color: transparent;
-      border-bottom: 2px solid #fff; }
+      border-bottom: 2px solid #FFB400; }
     .navigation__link--current {
       background-color: transparent;
       border-bottom: 2px solid #FFB400; }
