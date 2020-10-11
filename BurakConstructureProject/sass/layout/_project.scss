@@ -1,0 +1,33 @@
+.project {
+	height: 70vh;
+
+	&__details {
+		background-color: $color-secondary-light;
+		color: $color-white;
+	}
+	&__info {
+		height: 70vh;
+		&--image {
+			height: 100%;
+			width: 100%;
+			background: url('../img/hero2.jpg') no-repeat center center/cover;
+		}
+		&--contact {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+
+			&-address {
+				width: 100%;
+				background-color: $color-primary;
+				padding: 2rem 3rem;
+			}
+			&-phone {
+				color: $color-dark;
+				width: 100%;
+				background-color: $color-white;
+				padding: 2rem 3rem;
+			}
+		}
+	}
+}

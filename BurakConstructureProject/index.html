@@ -1,31 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Can's Project</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
- 
-  <header class="header">
-    <!-- navigation responsive de hamburger menu alıncak.Responsive denerken html delete yapılırsa responsive elde ediyoruz -->
-    <nav class="navigation">
-      <h1 class="navigation__logo">LOGO</h1>
-      <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="navigation__link navigation__link--current">Ana sayfa</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Hakkımızda</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Projeler</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">İletişim</a></li>
-     </ul>
-   </nav>
-    <div class="header__container">
-     <div class="header__content">
-        <h1 class="heading-primary u-margin-bottom-2">Inspection, inspection, reports, technical assistance and consultancy.</h1>
-        <p class="paragraph paragraph--animated">Lorem ipsum dolorquis unde nobis voluptatem ducimus consequatur, aut est hic in dolore</p>
-        <a href="" class="btn btn--primary  btn--animated">Daha fazla detay</a>
-     </div>
-   </div>
- </header>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Can's Project</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="bootstrap-grid.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navigation">
+				<h1 class="navigation__logo">LOGO</h1>
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link navigation__link--current"
+							>Ana sayfa</a
+						>
+					</li>
+
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Hakkımızda</a>
+					</li>
+
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Projeler</a>
+					</li>
+
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">İletişim</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class="header__container">
+				<div class="header__content">
+					<h1 class="heading-primary u-margin-bottom-2">
+						Inspection, inspection, reports, technical assistance and
+						consultancy.
+					</h1>
+
+					<a href="" class="btn btn--primary btn--animated header__content--btn"
+						>Daha fazla detay</a
+					>
+				</div>
+			</div>
+		</header>
+		<section class="project">
+			<div class="container-fluid">
+				<div class="row">
+					<div
+						class="project__details col-12 col-md-4 d-flex align-items-start flex-column justify-content-center pl-5 py-5"
+					>
+						<h2 class="heading-secondary u-margin-bottom-4">Project Name</h2>
+
+						<p class="paragraph">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+							nulla obcaecati veniam modi molestiae blanditiis itaque distinctio
+							quibusdam. Necessitatibus et in iusto? Cupiditate assumenda porro
+							facilis ea, hic recusandae voluptas alias ratione pariatur culpa
+							dolor optio? Beatae perferendis amet assumenda.
+						</p>
+
+						<a class="btn btn--tertiary">Detaya git</a>
+					</div>
+
+					<div class="project__info col-12 col-md-8 p-0">
+						<div class="project__info--image"></div>
+						<div class="project__info--contact d-flex justify-content-between">
+							<div class="project__info--contact-address u-text-center">
+								<i class="fas fa-map-marker-alt"></i>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							</div>
+							<div class="project__info--contact-phone u-text-center">
+								<i class="fas fa-phone"></i> +90 (554) 659 4512
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about-us">
+			<div class="about-us__bg"></div>
+
+			<div class="about-us--details">
+				<h3 class="heading-secondary mb-5">Hakkımızda</h3>
+				<p class="paragraph">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt
+					error delectus optio, voluptatibus unde! Enim, quam quos ipsum et nam
+					reiciendis dolores earum pariatur, facere aspernatur aperiam omnis rem
+					eligendi natus est velit architecto? Ducimus adipisci vel rerum
+					consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Qui ipsum quia repellendus magnam ab consequatur deserunt rem nam
+					aspernatur pariatur.
+				</p>
+			</div>
+		</section>
+	</body>
 </html>
