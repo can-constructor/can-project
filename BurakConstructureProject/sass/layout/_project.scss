@@ -1,12 +1,20 @@
 .project {
-	height: 70vh;
+	height: 80vh;
 
 	&__details {
 		background-color: $color-secondary-light;
 		color: $color-white;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 12px;
+			height: 80%;
+			width: 2px;
+			background-color: $color-primary;
+		}
 	}
 	&__info {
-		height: 70vh;
+		height: 80vh;
 		&--image {
 			height: 100%;
 			width: 100%;
@@ -20,13 +28,13 @@
 			&-address {
 				width: 100%;
 				background-color: $color-primary;
-				padding: 2rem 3rem;
+				padding: 3rem 4rem;
 			}
 			&-phone {
 				color: $color-dark;
 				width: 100%;
 				background-color: $color-white;
-				padding: 2rem 3rem;
+				padding: 3rem 4rem;
 			}
 		}
 	}

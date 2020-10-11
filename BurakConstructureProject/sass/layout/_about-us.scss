@@ -18,10 +18,19 @@
 		color: $color-white;
 		position: absolute;
 		width: 30%;
-		bottom: 15vw;
+		bottom: 12vw;
 		right: 15%;
 		.heading-secondary {
 			color: $color-primary;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			left: -57px;
+			top: -20px;
+			height: 120%;
+			width: 2px;
+			background-color: $color-primary;
 		}
 	}
 }

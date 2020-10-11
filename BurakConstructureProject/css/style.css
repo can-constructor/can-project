@@ -146,11 +146,6 @@ li {
 .u-d_ib {
   display: inline-block; }
 
-.h_divider {
-  height: 80%;
-  width: 2px;
-  color: #ffb400; }
-
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -244,12 +239,19 @@ li {
     padding: 2rem 4rem; }
 
 .project {
-  height: 70vh; }
+  height: 80vh; }
   .project__details {
     background-color: #373737;
     color: #fff; }
+    .project__details::before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      height: 80%;
+      width: 2px;
+      background-color: #ffb400; }
   .project__info {
-    height: 70vh; }
+    height: 80vh; }
     .project__info--image {
       height: 100%;
       width: 100%;
@@ -261,12 +263,12 @@ li {
       .project__info--contact-address {
         width: 100%;
         background-color: #ffb400;
-        padding: 2rem 3rem; }
+        padding: 3rem 4rem; }
       .project__info--contact-phone {
         color: #000;
         width: 100%;
         background-color: #fff;
-        padding: 2rem 3rem; }
+        padding: 3rem 4rem; }
 
 .about-us {
   position: relative;
@@ -282,7 +284,20 @@ li {
     color: #fff;
     position: absolute;
     width: 30%;
-    bottom: 15vw;
+    bottom: 12vw;
     right: 15%; }
     .about-us--details .heading-secondary {
       color: #ffb400; }
+    .about-us--details::before {
+      content: '';
+      position: absolute;
+      left: -57px;
+      top: -20px;
+      height: 120%;
+      width: 2px;
+      background-color: #ffb400; }
+
+.contact__form {
+  width: 50%; }
+  .contact__form label {
+    display: inline; }
