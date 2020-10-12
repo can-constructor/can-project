@@ -1,9 +1,46 @@
 .contact {
+  &__map{
+		background-color: red;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		&--container{
+			width: 100%;
+			height: 85%;
+			background-color:white
+		}
+		&--icons{
+			width: 100%;
+			height: 15%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&--icon1{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			background-color: $color-primary;
+			i{
+				color: $color-secondary;
+			}
+		}
+		&--icon2{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			background-color: $color-secondary;
+			i{
+				color: $color-primary;
+			}
+		}
+	}
+
 	&__form {
-		width: 50%;
-		background-color: $color-secondary;
+		background-color: $color-primary;
 		h3{
-			color: $color-primary;
+			color: $color-secondary-dark;
 			text-align: center;
 		}
 		&--label{
@@ -28,7 +65,7 @@
 		margin: 3rem 0;
 		  &:focus {
         outline:none;
-        border-bottom: 5px solid $color-primary;
+        border-bottom: 5px solid $color-secondary-dark;
       }
 		}
 
