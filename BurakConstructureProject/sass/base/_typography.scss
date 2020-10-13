@@ -13,6 +13,13 @@
 	font-size: 3rem; //responsive için font-size:25px
 	font-weight: 700;
 }
+.heading-tertiary {
+	text-transform: uppercase;
+	backface-visibility: hidden;
+	font-size: 3rem; //responsive için font-size:25px
+	font-weight: 700;
+	color: $color-primary;
+}
 .paragraph {
 	font-size: 1.7rem;
 	font-weight: 400;
