@@ -36,3 +36,10 @@
 		margin-bottom: 3rem;
 	}
 }
+@media only screen and (max-width: 650px) and (min-width: 200px)  {
+	.heading-primary {
+		font-size: 2rem; //responsive için font-size:25px
+	}
+	
+
+}

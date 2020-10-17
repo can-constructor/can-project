@@ -18,6 +18,7 @@
 		height: 75vh;
 	}
 
+
 	&__content {
 		width: 50%;//responsive için width:100%
 		text-align: left;
@@ -27,3 +28,12 @@
 		max-width: 1600px;
 	}
 }
+
+// @media only screen and (max-width: 650px) and (min-width: 200px)  {
+// 	.header{
+// 		&__content{
+// 			width: 100%;
+// 		}
+// 	}
+
+// }

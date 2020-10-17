@@ -1,0 +1,19 @@
+.aboutUs{
+  background-color: $color-secondary-light;
+  color: $color-white;
+
+  &__explanation{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+  &__detail{
+    border: 2px solid $color-primary;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  
+  }
+  &__icon{
+    color: $color-primary;
+  }
+}
