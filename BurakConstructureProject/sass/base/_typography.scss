@@ -2,7 +2,7 @@
 	color: $color-white;
 	text-transform: uppercase;
 	backface-visibility: hidden;
-	font-size: 3.5rem; //responsive için font-size:25px
+	font-size: 2.8rem; //responsive için font-size:25px
 	font-weight: 900;
 	animation: moveInTop 1s ease-out;
 }
@@ -10,7 +10,7 @@
 .heading-secondary {
 	text-transform: uppercase;
 	backface-visibility: hidden;
-	font-size: 3rem; //responsive için font-size:25px
+	font-size: 3rem; //responsive için font-size:2rem
 	font-weight: 700;
 }
 .heading-tertiary {
