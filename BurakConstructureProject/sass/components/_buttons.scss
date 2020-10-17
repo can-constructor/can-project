@@ -1,9 +1,10 @@
 .btn {
 	display: inline-block;
 	cursor: pointer;
-	padding: 1rem 2rem;
+	padding: 1.5rem 2.5rem;
 	margin-top: 1rem;
 	font-weight: 700;
+	font-size: 1.7rem;
 
 	&:hover:after {
 		content: '\2192';
@@ -17,12 +18,12 @@
 	}
 
 	&--secondary {
-		color: $color-dark;
+		color: $color-secondary;
 		background-color: transparent;
-		border: 2px solid $color-dark;
+		border: 3px solid $color-secondary;
 		&:hover {
 			color: $color-white;
-			background-color: $color-dark;
+			background-color: $color-secondary;
 		}
 	}
 

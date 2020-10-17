@@ -14,13 +14,16 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding: 2rem;
 		height: 70vh;
 	}
 
 	&__content {
 		width: 50%;
-		text-align: center;
+		text-align: left;
 		padding: 2rem 4rem;
+		
+	}
+	.container-lg{
+		max-width: 1600px;
 	}
 }

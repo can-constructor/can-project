@@ -12,45 +12,49 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="bootstrap-grid.css" />
+		<script src="./index.js"></script>
 	</head>
 	<body>
 		<header class="header">
-			<nav class="navigation">
-				<h1 class="navigation__logo">LOGO</h1>
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a href="#" class="navigation__link navigation__link--current"
-							>Ana sayfa</a
+			<div class="container-lg container-sm">
+				<nav class="navigation">
+					<h1 class="navigation__logo">LOGO</h1>
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="#" class="navigation__link navigation__link--current"
+								>Ana sayfa</a
+							>
+						</li>
+	
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Hakkımızda</a>
+						</li>
+	
+						<li class="navigation__item">
+							<a href="project.html" class="navigation__link">Projeler</a>
+						</li>
+	
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">İletişim</a>
+						</li>
+					</ul>
+				</nav>
+	
+				<div class="header__container">
+					<div class="header__content">
+						<h1 class="heading-primary u-margin-bottom-2">
+							Inspection, inspection, reports, technical assistance and
+							consultancy.
+						</h1>
+	
+						<a href="" class="btn btn--primary btn--animated header__content--btn"
+							>Daha fazla detay</a
 						>
-					</li>
-
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Hakkımızda</a>
-					</li>
-
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Projeler</a>
-					</li>
-
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">İletişim</a>
-					</li>
-				</ul>
-			</nav>
-
-			<div class="header__container">
-				<div class="header__content">
-					<h1 class="heading-primary u-margin-bottom-2">
-						Inspection, inspection, reports, technical assistance and
-						consultancy.
-					</h1>
-
-					<a href="" class="btn btn--primary btn--animated header__content--btn"
-						>Daha fazla detay</a
-					>
+					</div>
 				</div>
 			</div>
 		</header>
+
 		<section class="project">
 			<div class="container-fluid">
 				<div class="row">
@@ -74,7 +78,7 @@
 						<div class="project__info--image"></div>
 						<div class="project__info--contact d-flex justify-content-between">
 							<div class="project__info--contact-address u-text-center">
-								<i class="fas fa-map-marker-alt"></i>
+								<i class="fas  fa-map-marker-alt"></i>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 							</div>
 							<div class="project__info--contact-phone u-text-center">
@@ -85,9 +89,9 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="about-us">
 			<div class="about-us__bg"></div>
-
 			<div class="about-us--details">
 				<h3 class="heading-secondary mb-5">Hakkımızda</h3>
 				<p class="paragraph">
@@ -102,31 +106,112 @@
 				<a href="" class="btn btn--tertiary">Daha Fazla</a>
 			</div>
 		</section>
-		<div class="contact">
+
+		<section class="contact">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-6"></div>
-					<div class="col-6 contact__form">
+					<div class="col-12 col-md-6 pl-0 pr-0 contact__map">
+						
+								<div class="contact__map--container">
+									dadsada
+								</div>
+								<div class="contact__map--icons ">
+									<div class="contact__map--icon1 d-flex align-items-center justify-content-center ">
+										<i class="fab fa-3x fa-facebook-square"></i>
+									</div>
+									<div class="contact__map--icon2 d-flex align-items-center justify-content-center">
+										<i class="fab fa-3x fa-whatsapp-square"></i>
+									</div>
+								</div>
+				 </div>
+			
+					<div class="col-12 col-md-6 p-5 contact__form">
 						<h3 class="heading-secondary">İletişim</h3>
-						<form class="d-flex flex-column" action="" method="post">
-							<label for="name">İsim-Soyisim:</label>
-							<input type="text" id="name" />
-							<label for="phone">Telefon no:</label>
-							<input type="tel" id="phone" />
-							<label for="email">Email:</label>
-							<input type="email" id="email" />
-							<label for="message">Mesaj:</label>
-							<textarea
-								name="message"
-								id="message"
-								cols="30"
-								rows="10"
-							></textarea>
-							<button type="submit" class="btn btn--tertiary">Gönder</button>
+						<form class="container-fluid" action="" method="post">
+							<div class="row">
+								<div class="col-12 col-md-6">
+									<label class="contact__form--label" for="name"></label>
+									<input placeholder="İsminiz"  class="contact__form--input" type="text" id="name" />
+								</div>
+								<div class="col-12 col-md-6">
+									<label class="contact__form--label" for="surname"></label>
+									<input placeholder="Soyadınız" class="contact__form--input" type="text" id="surname" />
+								</div>
+								<div class="col-12 col-md-6">
+									<label class="contact__form--label" for="telefon"></label>
+									<input placeholder="Telefon Numaranız" class="contact__form--input" type="phone" id="telefon" />
+								</div>
+								<div class="col-12 col-md-6">
+									<label class="contact__form--label" for="email"></label>
+									<input placeholder="Mail Adresiniz" class="contact__form--input" type="email" id="email" />
+								</div>
+								<div class="col-12">
+								<label class="contact__form--label" for="message"></label>
+								<textarea
+									name="message"
+									id="message"
+									cols="20"
+									rows="10"
+									class="contact__form--textarea"
+									aria-placeholder="Mesajını giriniz"
+								></textarea>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn--secondary">Gönder</button>
+							</div>
 						</form>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="footer__logoBox u-text-center col-12 col-md-3">
+							<h1 class="-footer__logo">LOGO</h1>
+						  <p class="">Gözenler İnşaat
+							Ve Müteahhitlik Ltd. Şti</p>
+					</div>
+					<div class="col-12 col-md-3">
+						<h2 class="heading-secondary u-text-center">iletişim</h2>
+						<ul class="footer__list">
+							<li class="footer__item">	<i class="fas fa-2x fa-map-marker-alt"></i><span>Lorem ipsum dolor sit, amet consectetur</span></li>
+							<li class="footer__item">	<i class="fas fa-2x fa-phone"></i><span> +90 (554) 659 4512</span></li>
+							<li class="footer__item">	<i class="fas fa-2x fa-envelope-open"></i><span> gözenlerinşaat@gmail.com</span></li>
+						</ul>
+					</div>
+					<div class="footer__projectsBox col-12 col-md-3">
+							<h2 class="heading-secondary u-text-center">projeler</h2>
+							<i class="fas fa-2x fa-hard-hat"></i><a href="#" class="footer__projectsBox--link">Project1</a>
+					</div>
+					<div class="col-12 col-md-3">
+						<div class="footer__navigation">
+							<ul class="navigation__list d-flex flex-column justify-content-center align-items-center">
+								<li class="navigation__item">
+									<a href="#" class="navigation__link navigation__link--current"
+										>Ana sayfa</a
+									>
+								</li>
+			
+								<li class="navigation__item">
+									<a href="#" class="navigation__link">Hakkımızda</a>
+								</li>
+			
+								<li class="navigation__item">
+									<a href="#" class="navigation__link ">Projeler</a>
+								</li>
+			
+								<li class="navigation__item">
+									<a href="#" class="navigation__link">İletişim</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
