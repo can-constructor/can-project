@@ -1,13 +1,14 @@
-.header-project {
-	color: #ffffff;
+.header-about{
+  color: #ffffff;
 	height: 100vh;
 	width: 100%;
 	background: linear-gradient(
 			to bottom,
 			rgba($color-secondary-dark, 0.9),
-			rgba($color-primary-light, 0.5)
+			rgba($color-primary-dark, 0.5)
 		),
-		url('../img/projectHero-1.jpg') no-repeat center center/cover;
+    url('../img/aboutUs-hero2.jpg') no-repeat center center/cover;
+  
 
 	&__container {
 		display: flex;
@@ -26,9 +27,8 @@
 		max-width: 1600px;
 	}
 }
-
 @media only screen and (max-width: 800px) and (min-width: 200px)  {
-	.header-project{
+	.header-about{
 		&__content{
 			width: 100%;
 		}

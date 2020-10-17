@@ -96,6 +96,10 @@ li {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+@media only screen and (max-width: 650px) and (min-width: 200px) {
+  .heading-primary {
+    font-size: 2rem; } }
+
 .u-margin-bottom-huge {
   margin-bottom: 15rem; }
 
@@ -153,6 +157,18 @@ li {
 .u-d_ib {
   display: inline-block; }
 
+.u-font-2 {
+  font-size: 2rem; }
+
+.u-font-2-l {
+  font-size: 2.5rem; }
+
+.u-font-3 {
+  font-size: 3rem; }
+
+.u-font-3-l {
+  font-size: 3.5rem; }
+
 .header-project {
   color: #ffffff;
   height: 100vh;
@@ -170,6 +186,32 @@ li {
     text-align: left; }
   .header-project .container-lg {
     max-width: 1600px; }
+
+@media only screen and (max-width: 800px) and (min-width: 200px) {
+  .header-project__content {
+    width: 100%; } }
+
+.header-about {
+  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(29, 29, 29, 0.9), rgba(179, 126, 0, 0.5)), url("../img/aboutUs-hero2.jpg") no-repeat center center/cover; }
+  .header-about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 75vh; }
+  .header-about__content {
+    width: 50%;
+    text-align: left; }
+  .header-about .container-lg {
+    max-width: 1600px; }
+
+@media only screen and (max-width: 800px) and (min-width: 200px) {
+  .header-about__content {
+    width: 100%; } }
 
 .btn {
   display: inline-block;
@@ -442,3 +484,52 @@ li {
       font-size: 1.8rem; }
   .footer__navigation {
     text-align: center; }
+
+.aboutUs {
+  background-color: #373737;
+  color: #fff; }
+  .aboutUs__explanation {
+    padding: 1rem 2rem;
+    font-size: 2rem; }
+  .aboutUs__detail {
+    border: 2px solid #ffb400;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-bottom: 3rem; }
+  .aboutUs__icon {
+    color: #ffb400; }
+
+.director {
+  background: linear-gradient(to bottom, rgba(255, 180, 0, 0.5), rgba(29, 29, 29, 0.9)), url("../img/director.jpg") no-repeat center center/cover;
+  padding: 2rem 3rem; }
+  .director__card {
+    width: 40rem;
+    height: 100%;
+    border: none;
+    border-radius: 2rem; }
+    .director__card--bg {
+      background: #373737;
+      border-bottom: 2px solid #ffb400;
+      color: #fff; }
+    .director__card--img {
+      border-top-left-radius: 2rem;
+      border-top-right-radius: 2rem; }
+    .director__card--item {
+      background-color: transparent;
+      font-size: 2rem;
+      background: #373737;
+      color: #fff;
+      padding: 1rem 2rem; }
+      .director__card--item:not(:last-child) {
+        border-bottom-width: 80%;
+        border-bottom: 2px solid #ffb400; }
+      .director__card--item:last-child {
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem; }
+      .director__card--item-icon {
+        color: #ffb400;
+        margin-right: 1rem; }
+
+@media only screen and (max-width: 650px) and (min-width: 200px) {
+  .director__card {
+    width: 100%; } }
