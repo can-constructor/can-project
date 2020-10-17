@@ -9,19 +9,19 @@
 		),
 		url('../img/hero5.jpg') no-repeat center center/cover;
 
+		
 	&__container {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		height: 70vh;
+		height: 75vh;
 	}
 
 	&__content {
-		width: 50%;
+		width: 50%;//responsive için width:100%
 		text-align: left;
 		padding: 2rem 4rem;
-		
 	}
 	.container-lg{
 		max-width: 1600px;

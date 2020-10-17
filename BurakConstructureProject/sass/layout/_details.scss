@@ -1,5 +1,9 @@
 .details{
-  background-color: $color-secondary-light;
+  background: linear-gradient(
+			to left bottom,
+      rgba($color-secondary, 0.9),
+			rgba($color-secondary-dark, 0.9)
+		);
   &__ad{
     padding: 2rem 0;
     &--paragraph{
