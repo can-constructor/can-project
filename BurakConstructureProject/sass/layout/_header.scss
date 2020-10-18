@@ -9,7 +9,6 @@
 		),
 		url('../img/hero5.jpg') no-repeat center center/cover;
 
-		
 	&__container {
 		display: flex;
 		flex-direction: column;
@@ -18,22 +17,19 @@
 		height: 75vh;
 	}
 
-
 	&__content {
-		width: 50%;//responsive için width:100%
-		text-align: left;
 		padding: 2rem 4rem;
+		@media (max-width: 768px) {
+			padding: 0;
+		}
 	}
-	.container-lg{
+
+	.btn {
+		@media (max-width: 768px) {
+			padding: 0.7rem 1.5rem;
+		}
+	}
+	.container-lg {
 		max-width: 1600px;
 	}
 }
-
-// @media only screen and (max-width: 650px) and (min-width: 200px)  {
-// 	.header{
-// 		&__content{
-// 			width: 100%;
-// 		}
-// 	}
-
-// }

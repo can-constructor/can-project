@@ -1,7 +1,7 @@
 .about-us {
 	position: relative;
-	height: 80vh;
-	&__bg {
+
+	&-bg {
 		position: absolute;
 		top: 0;
 		z-index: -1;
@@ -14,24 +14,37 @@
 			),
 			url('../img/section-about.jpg') no-repeat center center/cover;
 	}
-	&--details { 
+	&-details {
+		padding: 150px 0;
 		color: $color-white;
-		position: absolute;
-		width: 30%;
-		bottom: 12vw;
-		right: 15%;
+		@media (max-width: 768px) {
+			padding: 50px 0;
+		}
 
+		.row {
+			& > div:first-child {
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					left: -20px;
+					top: 0px;
+					height: 100%;
+					width: 2px;
+					background-color: $color-primary;
+				}
+			}
+		}
 		.heading-secondary {
 			color: $color-primary;
 		}
-		&::before {
-			content: '';
-			position: absolute;
-			left: -57px;
-			top: -20px;
-			height: 120%;
-			width: 2px;
-			background-color: $color-primary;
+
+		.paragraph {
 		}
+
+		// position: absolute;
+		// width: 30%;
+		// bottom: 12vw;
+		// right: 15%;
 	}
 }

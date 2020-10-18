@@ -1,40 +1,40 @@
-.details{
-  background: linear-gradient(
-			to left bottom,
-      rgba($color-secondary, 0.9),
-			rgba($color-secondary-dark, 0.9)
-		);
-  &__ad{
-    padding: 2rem 0;
-    &--paragraph{
-      color: $color-white;
-      font-size: 1.8rem;
-      line-height: 2;
-    }
-  }
-  &__info{
-    border-top: 3px solid $color-primary;
-    
-    padding: 2px;
-    &--list{
-      padding: 1rem 2rem;
-      list-style: none;
-    }
-    &--item{
-      font-size: 1.8rem;
-      color: $color-white;
-      font-family: inherit;
-      &:not(:last-child){
-        margin-bottom: 1.5rem;
-      }
-      &::before{
-        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: $color-primary; /* Change the color */
-        font-weight: bold; /* If you want it to be bold */
-        display: inline-block; /* Needed to add space between the bullet and the text */
-        width: 2rem; /* Also needed for space (tweak if needed) */
-        margin-left: -1em;
-      }
-    }
-  }
+.details {
+	background: linear-gradient(
+		to left bottom,
+		rgba($color-secondary, 0.9),
+		rgba($color-secondary-dark, 0.9)
+	);
+	&__ad {
+		padding: 2rem 0;
+		&--paragraph {
+			color: $color-white;
+			font-size: 1.8rem;
+			line-height: 2;
+		}
+	}
+	&__info {
+		border-top: 3px solid $color-primary;
+
+		padding: 2px;
+		&--list {
+			padding: 1rem 2rem;
+			list-style: none;
+		}
+		&--item {
+			font-size: 1.8rem;
+			color: $color-white;
+			font-family: inherit;
+			&:not(:last-child) {
+				margin-bottom: 1.5rem;
+			}
+			&::before {
+				content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+				color: $color-primary; /* Change the color */
+				font-weight: bold; /* If you want it to be bold */
+				display: inline-block; /* Needed to add space between the bullet and the text */
+				width: 2rem; /* Also needed for space (tweak if needed) */
+				margin-left: -1em;
+			}
+		}
+	}
 }

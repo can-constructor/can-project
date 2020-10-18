@@ -96,7 +96,7 @@ li {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-@media only screen and (max-width: 650px) and (min-width: 200px) {
+@media only screen and (max-width: 768px) and (min-width: 200px) {
   .heading-primary {
     font-size: 2rem; } }
 
@@ -298,101 +298,94 @@ li {
     justify-content: center;
     height: 75vh; }
   .header__content {
-    width: 50%;
-    text-align: left;
     padding: 2rem 4rem; }
+    @media (max-width: 768px) {
+      .header__content {
+        padding: 0; } }
+  @media (max-width: 768px) {
+    .header .btn {
+      padding: 0.7rem 1.5rem; } }
   .header .container-lg {
     max-width: 1600px; }
 
 .project {
-  height: 80vh; }
-  .project__details {
-    background-color: #373737;
-    color: #fff; }
-    .project__details::before {
+  position: relative; }
+  .project .explanation {
+    padding-top: 6%;
+    padding-left: 25px;
+    background: #373737; }
+    @media (max-width: 768px) {
+      .project .explanation {
+        padding-bottom: 50px; } }
+    .project .explanation .paragraph {
+      color: #fff; }
+    .project .explanation::before {
       content: '';
       position: absolute;
+      top: 5%;
       left: 12px;
-      height: 80%;
+      height: 90%;
       width: 2px;
       background-color: #ffb400; }
-  .project__info {
-    height: 80vh; }
-    .project__info--image {
-      height: 100%;
-      width: 100%;
-      background: url("../img/hero2.jpg") no-repeat center center/cover; }
-    .project__info--contact {
+  .project .image {
+    position: relative;
+    padding: 0; }
+    .project .image .info {
       position: absolute;
       bottom: 0;
-      width: 100%; }
-      .project__info--contact-address {
-        width: 100%;
-        background-color: #ffb400;
-        padding: 3rem 4rem; }
-      .project__info--contact-phone {
-        color: #000;
-        width: 100%;
-        background-color: #fff;
-        padding: 3rem 4rem; }
+      left: 0; }
+      .project .image .info .row {
+        justify-content: space-between; }
+        .project .image .info .row i {
+          padding-right: 3px; }
+        .project .image .info .row .address {
+          color: #2a2a2a;
+          background-color: #ffb400;
+          padding: 20px 0 20px 10px; }
+        .project .image .info .row .phone {
+          padding: 20px 0 20px 10px;
+          color: #fff;
+          background-color: #373737;
+          text-align: left; }
+  .project-bg {
+    padding: inherit 0;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    background: url("../img/hero2.jpg") no-repeat center center/cover; }
 
 .about-us {
-  position: relative;
-  height: 80vh; }
-  .about-us__bg {
+  position: relative; }
+  .about-us-bg {
     position: absolute;
     top: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(29, 29, 29, 0.9), rgba(55, 55, 55, 0.9)), url("../img/section-about.jpg") no-repeat center center/cover; }
-  .about-us--details {
-    color: #fff;
-    position: absolute;
-    width: 30%;
-    bottom: 12vw;
-    right: 15%; }
-    .about-us--details .heading-secondary {
+  .about-us-details {
+    padding: 150px 0;
+    color: #fff; }
+    @media (max-width: 768px) {
+      .about-us-details {
+        padding: 50px 0; } }
+    .about-us-details .row > div:first-child {
+      position: relative; }
+      .about-us-details .row > div:first-child::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        height: 100%;
+        width: 2px;
+        background-color: #ffb400; }
+    .about-us-details .heading-secondary {
       color: #ffb400; }
-    .about-us--details::before {
-      content: '';
-      position: absolute;
-      left: -57px;
-      top: -20px;
-      height: 120%;
-      width: 2px;
-      background-color: #ffb400; }
 
-.contact__map {
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; }
-  .contact__map--container {
-    width: 100%;
-    height: 85%;
-    background-color: white; }
-  .contact__map--icons {
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .contact__map--icon1 {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: #ffb400; }
-    .contact__map--icon1 i {
-      color: #2a2a2a; }
-  .contact__map--icon2 {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: #2a2a2a; }
-    .contact__map--icon2 i {
-      color: #ffb400; }
+.contact .map {
+  padding: 0;
+  width: 100%;
+  height: 100%; }
 
 .contact__form {
   background-color: #ffb400; }
@@ -404,7 +397,7 @@ li {
     font-weight: 700;
     display: block;
     color: #ffb400;
-    margin: .2rem .5rem; }
+    margin: 0.2rem 0.5rem; }
   .contact__form--input {
     font-size: 1.6rem;
     font-family: inherit;
@@ -447,7 +440,7 @@ li {
       .details__info--item:not(:last-child) {
         margin-bottom: 1.5rem; }
       .details__info--item::before {
-        content: "\2022";
+        content: '\2022';
         /* Add content: \2022 is the CSS Code/unicode for a bullet */
         color: #ffb400;
         /* Change the color */
