@@ -244,47 +244,22 @@ li {
   .btn--animated {
     animation: moveInBottom 1s ease-out; }
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  padding: 2rem 0; }
-  .navigation__logo {
-    width: 180px; }
-  .navigation__item {
-    display: inline-block;
-    padding: 0.75rem;
-    font-weight: 500; }
-  .navigation__link {
-    padding: 0 1rem;
-    font-size: 1.8rem;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    color: #fff; }
-    .navigation__link a:link, .navigation__link a:visited {
-      color: inherit; }
-    .navigation__link::after {
+.navbar {
+  font-size: 1.6rem;
+  padding-top: 10rem; }
+  .navbar .nav-link {
+    position: relative; }
+    .navbar .nav-link::after {
       content: '';
       width: 0%;
       position: absolute;
       height: 0.3rem;
       background-color: #ffb400;
       bottom: -0.4rem;
-      left: 1rem;
+      left: 0;
       transition: all 0.5s; }
-    .navigation__link:hover::after {
-      width: calc(100% - 2rem); }
-    .navigation__link--current::after {
-      content: '';
-      width: calc(100% - 2rem);
-      position: absolute;
-      height: 0.3rem;
-      background-color: #ffb400;
-      bottom: -0.4rem;
-      left: 1rem;
-      transition: all 0.5s; }
+    .navbar .nav-link:hover::after {
+      width: calc(100%); }
 
 .header {
   color: #ffffff;
@@ -385,7 +360,8 @@ li {
 .contact .map {
   padding: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  min-height: 400px; }
 
 .contact__form {
   background-color: #ffb400; }
