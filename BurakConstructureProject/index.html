@@ -13,15 +13,18 @@
 		/>
 		<link rel="stylesheet" href="bootstrap-grid.css" />
 		<link rel="stylesheet" href="bootstrap.css" />
+		<script src="bootstrap.js"></script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="container-lg container-sm">
-				<!-- <nav class="collapse navbar-collapse navigation">
+				<nav class="navigation">
 					<h1 class="navigation__logo">LOGO</h1>
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<a href="#" class="navigation__link navigation__link--current"
+							<a
+								href="index.html"
+								class="navigation__link navigation__link--current"
 								>Ana sayfa</a
 							>
 						</li>
@@ -38,37 +41,47 @@
 							<a href="#" class="navigation__link">İletişim</a>
 						</li>
 					</ul>
-				</nav> -->
-				<nav class="navbar navbar-expand-lg navbar-dark nav-color pt-5">
-					<a class="navbar-brand brand-nar" href="./index.html">Logo</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
+				</nav>
+
+				<div class="mobile-navigation">
+					<h1 class="navigation__logo p-5">LOGO</h1>
+					<input
+						type="checkbox"
+						class="mobile-navigation__checkbox"
+						id="navi-toogle"
+					/>
+					<label for="navi-toogle" class="mobile-navigation__button"
+						><span class="mobile-navigation__icon">&nbsp;</span></label
 					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav ml-auto title-right">
-							<li class="nav-item pr-5">
-								<a class="nav-link active" href="./index.html">Anasayfa</a>
+
+					<div class="mobile-navigation__background">&nbsp;</div>
+					<nav class="mobile-navigation__nav">
+						<ul class="mobile-navigation__list">
+							<li class="mobile-navigation__item">
+								<a href="index.html" class="mobile-navigation__link"
+									><span>01</span>Anasayfa</a
+								>
 							</li>
-							<li class="nav-item pr-5">
-								<a class="nav-link" href="./about.html">Hakkımızda</a>
+							<li class="mobile-navigation__item">
+								<a href="about.html" class="mobile-navigation__link"
+									><span>02</span>Hakkımızda</a
+								>
 							</li>
-							<li class="nav-item pr-5">
-								<a class="nav-link" href="./project.html">Projeler</a>
+							<li class="mobile-navigation__item">
+								<a href="project.html" class="mobile-navigation__link"
+									><span>03</span>Projeler</a
+								>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./contact.html">İletişim</a>
+
+							<li class="mobile-navigation__item">
+								<a href="contact.html" class="mobile-navigation__link"
+									><span>04</span>İletişim</a
+								>
 							</li>
 						</ul>
-					</div>
-				</nav>
+					</nav>
+				</div>
+
 				<div class="header__container">
 					<div class="header__content">
 						<h1 class="heading-primary u-margin-bottom-2">

@@ -1,9 +1,33 @@
-.navbar {
-	font-size: 1.6rem;
-	padding-top: 10rem;
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $color-white;
+	padding: 2rem 0;
+	&__logo {
+		width: 180px;
+	}
 
-	.nav-link {
+	&__item {
+		display: inline-block;
+		padding: 0.75rem;
+		font-weight: 500;
+	}
+	&__link {
+		padding: 0 1rem;
+		font-size: 1.8rem;
+		cursor: pointer;
 		position: relative;
+		display: inline-block;
+		color: $color-white;
+
+		a {
+			&:link,
+			&:visited {
+				color: inherit;
+			}
+		}
+
 		&::after {
 			content: '';
 			width: 0%;
@@ -11,12 +35,28 @@
 			height: 0.3rem;
 			background-color: $color-primary;
 			bottom: -0.4rem;
-			left: 0;
+			left: 1rem;
 			transition: all 0.5s;
 		}
 
 		&:hover::after {
-			width: calc(100%);
+			width: calc(100% - 2rem);
 		}
+
+		&--current {
+			&::after {
+				content: '';
+				width: calc(100% - 2rem);
+				position: absolute;
+				height: 0.3rem;
+				background-color: $color-primary;
+				bottom: -0.4rem;
+				left: 1rem;
+				transition: all 0.5s;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		display: none;
 	}
 }
