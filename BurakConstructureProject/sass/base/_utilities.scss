@@ -72,3 +72,9 @@
 .u-font-3-l{
 	font-size: 3.5rem;
 }
+.paragraph{
+	font-size: 1.8rem;
+	&:not(:last-child){
+		margin-bottom: .5rem;
+	}
+}
