@@ -9,30 +9,31 @@
     &__card{
       width: 40rem;
       height: 100%;
-      border: none;
       border-radius: 2rem;
       &--bg{
         background:$color-secondary-light;
-        border-bottom: 2px solid $color-primary;
-        color:$color-white
+        color:$color-white;
+        border:none;
       }
       &--img{
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
+        overflow: hidden;
       }
       &--item{
-        background-color: transparent;
         font-size: 2rem;
-        background:$color-secondary-light;
         color: $color-white;
         padding: 1rem 2rem;
+   
         &:not(:last-child){
           border-bottom-width: 80%;
-          border-bottom: 2px solid $color-primary;
+          background-color: $color-secondary-light;
         }
         &:last-child{
           border-bottom-left-radius: 2rem;
-          border-bottom-right-radius:2rem ;
+          border-bottom-right-radius:2rem;
+          background-color: $color-secondary-light;
+
         }
         &-icon{
           color: $color-primary;
